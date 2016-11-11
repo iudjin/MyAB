@@ -1,2 +1,2 @@
 # MyAB
-AB testing framewrk
+AB testing framework for ASP.NET

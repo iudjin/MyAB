@@ -30,6 +30,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NBasicExtensionMethod, Version=1.0.4554.34582, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBasicExtensionMethod.1.0.4554.34582\lib\net40\NBasicExtensionMethod.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NFeature, Version=1.0.4554.36812, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFeature.1.0.4554.36812\lib\net40\NFeature.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NFeature.Configuration, Version=1.0.4554.36639, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFeature.1.0.4554.36812\lib\net40\NFeature.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHelpfulException, Version=1.0.4554.34109, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHelpfulException.1.0.4554.34109\lib\net40\NHelpfulException.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NSure, Version=1.0.4554.34428, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSure.1.0.4554.34428\lib\net40\NSure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,9 +63,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ensure.cs" />
     <Compile Include="Feature.cs" />
+    <Compile Include="FeatureConsts.cs" />
+    <Compile Include="FeatureSettingNames.cs" />
     <Compile Include="IFeatureAvailabilityService.cs" />
+    <Compile Include="IFeatureService.cs" />
+    <Compile Include="ISystemClock.cs" />
+    <Compile Include="NFeatureService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

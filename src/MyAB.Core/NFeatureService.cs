@@ -12,21 +12,21 @@ namespace MyAB.Core
     /// </summary>
     public class NFeatureService : IFeatureService
     {
-        private readonly IFeatureManifestService<Feature> manifestService;
-        private readonly FeatureSetting<Feature, DefaultTenantEnum>[] featureSettings;
+        private readonly IFeatureManifestService<Feature> _manifestService;
+        private readonly FeatureSetting<Feature, DefaultTenantEnum>[] _featureSettings;
 
         public NFeatureService(IFeatureManifestService<Feature> manifestService, IFeatureSettingRepository<Feature> featureSettingRepository)
         {
             Ensure.ArgumentNotNull(manifestService, "manifestService");
             Ensure.ArgumentNotNull(featureSettingRepository, "featureSettingRepository");
 
-            this.manifestService = manifestService;
-            featureSettings = featureSettingRepository.GetFeatureSettings();
+            _manifestService = manifestService;
+            _featureSettings = featureSettingRepository.GetFeatureSettings();
         }
 
         public int GetHashCode(Feature feature)
         {
-            var s = featureSettings.FirstOrDefault(x => x.Feature == feature);
+            var s = _featureSettings.FirstOrDefault(x => x.Feature == feature);
 
             var hashString = new StringBuilder();
             hashString
@@ -55,7 +55,7 @@ namespace MyAB.Core
 
         public bool IsAvailable(Feature feature)
         {
-            return feature.IsAvailable(manifestService.GetManifest());
+            return feature.IsAvailable(_manifestService.GetManifest());
         }
 
         /// <summary>

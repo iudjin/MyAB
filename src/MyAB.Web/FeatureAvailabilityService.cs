@@ -27,7 +27,7 @@ namespace MyAB.Web
             if (ConfigurationManager.AppSettings["EnableABTesting"] == "false")
                 return false;
 
-            string featureName = feature.ToString();
+            var featureName = feature.ToString();
 
             var featureCookie = HttpContext.Current.Request.Cookies.Get(_workFeatureCookieName);
             var featureHashCookie = HttpContext.Current.Request.Cookies.Get(_workFeatureCookieHashName);
@@ -59,10 +59,10 @@ namespace MyAB.Web
                     return AddFeature(feature, featureCookie);
                 }
 
-                bool needToExtendLifetimeOfTheFeatureCookie = false;
+                var needToExtendLifetimeOfTheFeatureCookie = false;
                 var featureKeys = featureCookie.Values.AllKeys;
 
-                foreach (string key in featureKeys)
+                foreach (var key in featureKeys)
                 {
                     Feature featureItem;
                     if (Enum.TryParse(key, out featureItem))
@@ -99,7 +99,7 @@ namespace MyAB.Web
 
         private bool AddFeature(Feature feature, HttpCookie featureCookie)
         {
-            bool isAvailable = _featureService.IsAvailable(feature);
+            var isAvailable = _featureService.IsAvailable(feature);
             featureCookie.Values.Add(feature.ToString(), string.Format("{0}:{1}", _featureService.GetHashCode(feature), isAvailable));
             HttpContext.Current.Response.SetCookie(featureCookie);
             return isAvailable;
@@ -107,7 +107,7 @@ namespace MyAB.Web
 
         private HttpCookie CreateFeatureCookie()
         {
-            HttpCookie featureCookie = new HttpCookie(_workFeatureCookieName)
+            var featureCookie = new HttpCookie(_workFeatureCookieName)
             {
                 Expires =
                     _clock.Now.AddDays(

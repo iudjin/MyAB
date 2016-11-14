@@ -5,9 +5,8 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using MyAB.SampleApp.Models;
 using Owin;
-using SampleApp;
 
-namespace MyAB.SampleApp
+namespace SampleApp
 {
     public partial class Startup
     {

@@ -9,7 +9,7 @@ using NFeature;
 using NFeature.Configuration;
 using NFeature.DefaultImplementations;
 
-namespace MyAB.SampleApp.WindsorInstallers
+namespace SampleApp.WindsorInstallers
 {
     [ExcludeFromCodeCoverage]
     public class NFeatureInstaller : IWindsorInstaller

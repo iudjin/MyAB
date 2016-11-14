@@ -8,7 +8,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using MyAB.SampleApp.Models;
 
-namespace MyAB.SampleApp
+namespace SampleApp
 {
     public class EmailService : IIdentityMessageService
     {

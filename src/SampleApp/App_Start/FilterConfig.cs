@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace MyAB.SampleApp
+namespace SampleApp
 {
     public class FilterConfig
     {

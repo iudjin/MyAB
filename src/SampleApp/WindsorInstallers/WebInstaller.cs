@@ -6,7 +6,7 @@ using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace MyAB.SampleApp.WindsorInstallers
+namespace SampleApp.WindsorInstallers
 {
     [ExcludeFromCodeCoverage]
     public class WebInstaller : IWindsorInstaller

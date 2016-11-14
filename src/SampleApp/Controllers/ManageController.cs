@@ -6,9 +6,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MyAB.SampleApp.Models;
-using SampleApp;
 
-namespace MyAB.SampleApp.Controllers
+namespace SampleApp.Controllers
 {
     [Authorize]
     public class ManageController : Controller

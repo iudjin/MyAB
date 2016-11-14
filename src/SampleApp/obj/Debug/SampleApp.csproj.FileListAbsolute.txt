@@ -122,8 +122,8 @@ C:\iudjin\work\MyAB\src\SampleApp\bin\Castle.Windsor.xml
 C:\iudjin\work\MyAB\src\SampleApp\bin\System.Net.Http.Formatting.xml
 C:\iudjin\work\MyAB\src\SampleApp\bin\System.Web.Http.xml
 C:\iudjin\work\MyAB\src\SampleApp\bin\System.Web.Http.WebHost.xml
-C:\iudjin\work\MyAB\src\SampleApp\bin\MyAB.SampleApp.dll.config
-C:\iudjin\work\MyAB\src\SampleApp\bin\MyAB.SampleApp.dll
-C:\iudjin\work\MyAB\src\SampleApp\bin\MyAB.SampleApp.pdb
-C:\iudjin\work\MyAB\src\SampleApp\obj\Debug\MyAB.SampleApp.dll
-C:\iudjin\work\MyAB\src\SampleApp\obj\Debug\MyAB.SampleApp.pdb
+C:\iudjin\work\MyAB\src\SampleApp\bin\SampleApp.dll.config
+C:\iudjin\work\MyAB\src\SampleApp\bin\SampleApp.dll
+C:\iudjin\work\MyAB\src\SampleApp\bin\SampleApp.pdb
+C:\iudjin\work\MyAB\src\SampleApp\obj\Debug\SampleApp.dll
+C:\iudjin\work\MyAB\src\SampleApp\obj\Debug\SampleApp.pdb

@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace MyAB.SampleApp
+namespace SampleApp
 {
     public class BundleConfig
     {

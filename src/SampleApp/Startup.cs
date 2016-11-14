@@ -1,8 +1,9 @@
 ﻿using Microsoft.Owin;
+using MyAB.SampleApp;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(SampleApp.Startup))]
-namespace SampleApp
+[assembly: OwinStartup(typeof(Startup))]
+namespace MyAB.SampleApp
 {
     public partial class Startup
     {

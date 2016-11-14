@@ -3,11 +3,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
+using MyAB.SampleApp.Models;
 using Owin;
-using SampleApp.Models;
+using SampleApp;
 
-namespace SampleApp
+namespace MyAB.SampleApp
 {
     public partial class Startup
     {

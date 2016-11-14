@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace SampleApp
+namespace MyAB.SampleApp
 {
     public class BundleConfig
     {

@@ -70,9 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FeatureAvailabilityService.cs" />
-    <Compile Include="FeatureFilter.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    <Compile Include="FeatureFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewPage.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -82,6 +80,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyAB.Assertions\MyAB.Assertions.csproj">
+      <Project>{DBC4F0F9-97D3-4B00-80B8-83E2619D8CF9}</Project>
+      <Name>MyAB.Assertions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyAB.Core\MyAB.Core.csproj">
       <Project>{4E8EDF8B-4841-4D51-AE66-36E613F43B29}</Project>
       <Name>MyAB.Core</Name>

@@ -63,7 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ensure.cs" />
     <Compile Include="Feature.cs" />
     <Compile Include="FeatureConsts.cs" />
     <Compile Include="FeatureSettingNames.cs" />
@@ -76,6 +75,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyAB.Assertions\MyAB.Assertions.csproj">
+      <Project>{dbc4f0f9-97d3-4b00-80b8-83e2619d8cf9}</Project>
+      <Name>MyAB.Assertions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

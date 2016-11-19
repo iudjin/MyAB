@@ -198,6 +198,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WindsorConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -287,6 +288,10 @@
     <ProjectReference Include="..\MyAB.Web\MyAB.Web.csproj">
       <Project>{62558302-6843-4BBB-A8DD-EE0CBF6C5219}</Project>
       <Name>MyAB.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebWindsorIntegration\WebWindsorIntegration.csproj">
+      <Project>{E913A601-B248-47F8-9328-4EE1294D71CB}</Project>
+      <Name>WebWindsorIntegration</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

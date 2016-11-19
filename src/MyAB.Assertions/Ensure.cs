@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace MyAB.Core
+namespace MyAB.Assertions
 {
     /// <summary>
     /// Provides runtime assertions for common method preconditions.
@@ -22,10 +22,10 @@ namespace MyAB.Core
         {
             if (value.CompareTo(minValue) <= 0)
                 throw new ArgumentOutOfRangeException(paramName, value,
-                    string.Format("Argument must be greater than the minimum value of {0}.",
+                    string.Format("Argument must be greater than the minimum value of {0}.", 
                         minValue));
         }
-
+        
         /// <summary>
         /// Throws an exception if an argument is bigger than specified maximum value.
         /// </summary>
@@ -40,10 +40,10 @@ namespace MyAB.Core
         {
             if (value.CompareTo(maxValue) >= 0)
                 throw new ArgumentOutOfRangeException(paramName, value,
-                    string.Format("Argument must be smaller than the maximum value of {0}.",
+                    string.Format("Argument must be smaller than the maximum value of {0}.", 
                         maxValue));
         }
-
+        
         /// <summary>
         /// Throws an exception if an argument is less than or equal to a specified minimum value.
         /// </summary>
@@ -77,9 +77,9 @@ namespace MyAB.Core
             if (value.CompareTo(minValue) < 0)
                 throw new ArgumentOutOfRangeException(paramName, value,
                     string.Format("Argument must be greater than or equal to the minimum value " +
-                                  "of {0}.", minValue));
+                        "of {0}.", minValue));
         }
-
+        
         /// <summary>
         /// Throws an exception if an argument is bigger than a specified maximum value.
         /// </summary>
@@ -95,7 +95,7 @@ namespace MyAB.Core
             if (value.CompareTo(maxValue) > 0)
                 throw new ArgumentOutOfRangeException(paramName, value,
                     string.Format("Argument must be lesser than or equal to the maximum value " +
-                                  "of {0}.", maxValue));
+                        "of {0}.", maxValue));
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace MyAB.Core
                 throw new ArgumentNullException(paramName);
             if (value == string.Empty)
                 throw new ArgumentException(string.Format("Value for parameter '{0}' cannot be " +
-                                                          "an empty string.", paramName), paramName);
+                    "an empty string.", paramName), paramName);
         }
     }
 }
